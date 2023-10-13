@@ -1,38 +1,699 @@
-.App {
-  text-align: center;
+/* ================================================ */
+/* Common-css-start */
+
+h1 {
+  /* font-family: 'CabinetGrotesk-Extrabold'; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 55px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  /* font-family: 'CabinetGrotesk-Extrabold'; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  line-height: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+    /* font-family: 'CabinetGrotesk-Extrabold'; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    max-width: 460px;
+    font-weight: 600;
+	width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h4 {
+    font-size: 50px;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #475569;
+}
+
+a {
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.commonPadding {
+  padding: 0 140px;
+}
+
+/* Common-css-end */
+/* ================================================ */
+
+
+
+
+/* ================================================ */
+/* section-1-css-start */
+.bannerSection {
+    margin: 15px 0;
+}
+.bannerSection .navbar {
+    background: linear-gradient(264.55deg, #000000 0%, #000102 51.04%, #017CFF 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+	margin: 0 60px;
+    border-radius: 100px;
+	padding: 0.5rem 2rem;
+}
+.bannerSection .navbar .navbar-brand>img {
+    max-width: 200px;
+    width: 100%;
+}
+
+.bannerSection .navbar button {
+    background: #007BFF;
+    font-size: 13px;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+
+.bannerSection .navbar li>a {
+    color: #fff !important;
+    margin: 0 11px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.bannerBox {
+    margin: 70px 0;
+}
+
+.bannerBox .col-md-12 {
+    margin-top: 70px;
+}
+.bannerBox .details p {
+  text-align: right;
+}
+.heading>span{
+	color:#007BFF;
+}
+.bannerBox .row{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-Box{
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bannerBox .img>img {
+  max-width: 100%;
 }
+
+button {
+    padding: 0;
+    outline: 0;
+    border: 0;
+	padding: 15px 35px;
+    border-radius: 32px;
+    font-size: 14px;
+	color: #fff;
+	box-shadow: 0px 0px 5px 5px #8888880f;
+	font-weight: 500;
+}
+
+button:focus {
+	border: 0;
+	outline:none
+}
+
+.blue {
+    background: #007BFF;
+}
+
+.white{
+    background: #fff;
+	color: #000;
+}
+
+.btn-Box>button {
+    margin-left: 15px;
+}
+/* section-1-css-end */
+/* ================================================ */
+
+
+
+
+
+
+
+/* ================================================ */
+/* section-2-css-start */
+.recordSection {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 64px 0;
+}
+.recordSection h2 {
+    margin-bottom: 50px;
+}
+/* section-2-css-end */
+/* ================================================ */
+
+
+/* ================================================ */
+/* section-3-css-start */
+.automaticallyRecordSection {
+    padding: 100px 0 0;
+}
+.automaticallybox .row {
+  align-items: center;
+}
+.automaticallybox {
+    margin-bottom: 100px;
+}
+.automaticallyRecordSection img{
+  width: 100%;
+}
+.automaticallybox ol>li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.automaticallybox ol {
+    margin: 35px 0;
+}
+h3>Span {
+    color: #007BFF;
+}
+
+
+.salescriptbox h3 {
+    margin: 0 auto 50px;
+}
+
+.save {
+    font-size: 14px !important;
+    background: #85DAB9;
+    width: fit-content;
+    /* display: inline; */
+    max-width: 100px !important;
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 6px;
+    border-radius: 10px;
+}
+
+.sliderBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salescriptbox .detail>p {
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto 50px;
+    line-height: 34px;
+    letter-spacing: 1px;
+}
+
+.letdownloadBox p {
+    max-width: 680px;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.downloadBtn {
+    padding: 6px 10px;
+    font-size: 10px;
+    background: #007BFF;
+}
+
+.letdownloadBox .btnBox>button {
+    margin: 0 11px;
+}
+
+
+/* section-3-css-end */
+/* ================================================ */
+
+
+
+/* ================================================ */
+/* section-4-css-start */
+.salescriptsection{
+  padding: 100px 0;
+}
+
+.salescriptbox{
+	text-align: center;
+}
+.imageHoverbox {
+    margin-bottom: 20px;
+}
+/* hover-effect-css-start */
+.card {
+	position: relative;
+	background: radial-gradient(#111 50%, #000 100%);
+	overflow: hidden;
+	cursor: pointer;
+  height: 350px;
+  border-radius: 20px;
+}
+
+.card img {
+	max-width: 100%;
+	display: block;
+}
+
+.card img {
+	transform: scale(1.3);
+	transition: 0.3s ease-out;
+}
+
+.card:hover img {
+	transform: scale(1.1) translateY(-20px);
+	opacity: 0.3;
+}
+
+.overlay {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+}
+
+.text-h1 {
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all .3s ease-out;
+  font-size: 35px;
+}
+
+.text-p {
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all .3s ease-out 0.2s;
+  font-size: 20px;
+}
+
+.card:hover .overlay .text-h1 {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.card:hover .overlay .text-p {
+	opacity: 1;
+	transform: translateY(0);
+}
+/* hover-effect-css-end */
+/* section-4-css-end */
+/* ================================================ */
+
+
+
+
+
+/* ================================================ */
+/* section-5-css-start */
+.salescriptbox.chooseplan h3 {
+    max-width: 600px;
+	margin: 0 auto 20px;
+}
+
+.salescriptbox.chooseplan .DetailBbox p {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.salescriptbox.chooseplan .DetailBbox p:last-of-type {
+    font-size: 50px;
+    margin: 20px auto 20px;
+}
+
+.sliderBox>.DetailBbox {
+    max-width: 420px;
+    box-shadow: 0px 0px 5px 5px #8888880f;
+    border-radius: 20px;
+    padding: 50px 20px;
+    margin: 20px 20px;
+    width: 100%;
+}
+
+.DetailBbox.pro {
+    background: #017CFFC2;
+    padding: 90px 20px;
+}
+
+.DetailBbox.pro h3,.DetailBbox.pro p{
+	color:#fff;
+}
+
+.sliderBox>.DetailBbox ul {
+    list-style-type: none;
+    text-align: left;
+   
+    border-radius: 10px;
+    /* padding: 33px 33px; */
+	padding:0 10px ;
+}
+
+.sliderBox>.DetailBbox>div button {
+    color: #007BFF;
+    background: #fff;
+    padding: 15px 65px;
+    margin-top: 20px;
+}
+
+.sliderBox>.DetailBbox>div{
+	background: #F9FAFB;
+	padding: 33px 33px;
+	border-radius: 11px;
+}
+
+.sliderBox>.DetailBbox ul li {
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.sliderBox>.DetailBbox ul li i {
+    color: #007BFF;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+
+.sliderBox>.DetailBbox ul li i {
+    color: #fff;
+    font-size: 17px;
+    margin-right: 10px;
+    background: #007BFF;
+    border-radius: 50%;
+    padding: 5px;
+}
+  /* section-5-css-end */
+  /* ================================================ */
+
+
+
+/* ================================================ */
+/* section-6-css-start */
+
+.letdownloadBox {
+    text-align: center;
+}
+
+.letDownloadSection{
+	padding: 100px 0;
+	/* background-color: rgba(128, 128, 128, 0.208); */
+	background:linear-gradient(
+        0deg,
+        rgba(237, 235, 227, 0.8),
+        rgba(237, 235, 227, 0.8)
+      ), url(./img/meeting.jpg) no-repeat;
+	background-size: cover;
+}
+
+  /* section-6-css-end */
+  /* ================================================ */
+  
+
+/* ================================================ */
+/* section-7-css-start */
+.optimizedSection {
+    padding: 130px 0;
+}
+.optimizedBox .row {
+    align-items: center;
+}
+.optimizedBox img {
+    text-align: right;
+    max-width: 400px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+}
+
+.optimizedBox h3{
+	max-width: 100%;
+	font-size: 30px;
+}
+
+.optimizedBox p {
+    max-width: 640px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.customLinkTabs a {
+    display: block;
+    /* background: green; */
+    color: #000;
+    box-shadow: 0px 0px 5px 5px #8888880f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+    margin-bottom: 1px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.customLinkTabs a:hover {
+	color: #fff;
+	background-color: #007BFF;
+}
+  /* section-7-css-end */
+  /* ================================================ */
+  
+
+
+
+
+
+/* ================================================ */
+/* Footer-css-start */
+.footer{
+	text-align: center;
+	background: linear-gradient(264.55deg, #000000 0%, #000102 51.04%, #017CFF 100%);
+	padding: 60px 0 30px;
+}
+
+.footerBox img {
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.footerBox p {
+    color: #fff;
+}
+.footerBox .links {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 20px;
+    max-width: 330px;
+}
+
+.footerBox .links a{
+    color: #B2B3CF
+}
+
+.footerBox .copyright {
+    color: #B2B3CF;
+	font-size: 16px;
+}
+
+.footer .input-group-append {
+    background: #007BFF;
+    padding: 11px 26px;
+    border-radius: 32px;
+    color: #fff;
+}
+
+.footer .searchField>input {
+    background: transparent;
+    padding: 11px 26px;
+    border-radius: 32px;
+    color: #fff;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.searchField {
+    display: flex;
+    justify-content: space-between;
+}
+  /* Footer-css-end */
+  /* ================================================ */
+
+
+
+
+
+  /* ================================================ */
+/* media-query-start */
+
+@media(max-width: 1200px) {
+	h1 {
+		font-size: 45px;
+	}
+	.btn-Box {
+		text-align: left;
+	}
+	.bannerBox .details p {
+		text-align: left;
+	}
+	.optimizedBox img {
+		text-align: center;
+	
+		margin: 0 auto;
+	}
+
+	.sliderBox {
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+}
+
+
+@media(max-width: 1024px) {
+	
+  }
+
+  @media(max-width: 992px) {
+	.bannerSection .navbar {
+		border-radius: 20px;
+	}
+	h4 {
+		font-size: 40px;
+	}
+	.letdownloadBox p {
+		margin: 20px auto;
+	}
+
+
+
+  }
+  
+ 
+
+  @media(max-width: 768px) {
+	.bannerSection .navbar {
+		margin: 0 10px;
+	}
+	.commonPadding {
+		padding: 0 60px;
+	}
+	h2 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.recordSection h2 img {
+		max-width: 50px;
+	}
+  }
+
+  @media(max-width: 580px) {
+	h1 {
+		font-size: 35px;
+	}
+	p {
+		font-size: 17px;
+	}
+	.btn-Box>button {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.commonPadding {
+		padding: 0 10px;
+	}
+	.bannerSection .navbar {
+		margin: 0 ;
+	}
+
+	.recordSection h2 img {
+		max-width: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	h3 {
+		font-size: 25px;
+	}
+	.automaticallybox ol>li {
+		font-size: 16px;
+	}
+	h4 {
+		font-size: 30px;
+	}
+	.letdownloadBox .btnBox>button {
+		margin: 10px auto;
+		width: 100%;
+	}
+
+	.bannerBox {
+		margin: 30px 0;
+	}
+
+	.automaticallyRecordSection {
+		padding: 40px 0 0;
+	}
+	.automaticallybox {
+		margin-bottom: 30px;
+	}
+	.salescriptsection {
+		padding: 30px 0;
+	}
+	.letDownloadSection {
+		padding: 50px 0;
+	}
+	.optimizedSection {
+		padding: 30px 0;
+	}
+
+	.sliderBox>.DetailBbox>div {
+		padding: 33px 0px;
+	}
+  }
+
+  @media(max-width: 480px) {
+	
+  }
+
+/* media-query-end */
+  /* ================================================ */
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

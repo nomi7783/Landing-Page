@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Automaticallyrecord from './components/Automaticallyrecord';
+import Bannercomponent from './components/Bannercomponent';
+import Footer from './components/Footer';
+import Letdownload from './components/Letdownload';
+import Recordtranscribesection from './components/Recordtranscribesection';
+import Salescriptsection from './components/Salescriptsection';
+import Optimizedsection from './components/Optimizedsection';
+import Chooseplan from './components/Chooseplan';
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+
+ <Bannercomponent/>
+ <Recordtranscribesection/>
+ <Automaticallyrecord/>
+ <Salescriptsection/>
+ <Chooseplan/>
+ <Letdownload/>
+<Optimizedsection/>
+ <Footer/>  
+</>
   );
 }
 
