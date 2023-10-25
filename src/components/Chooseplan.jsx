@@ -1,15 +1,17 @@
-import React from 'react'
+import React from 'react';
+
+
 
 const Chooseplan = () => {
   return (
-    <section className="salescriptsection">
+    <section className="salescriptsection chooseplanSection">
     <div className="container-fluid">
       <div className='salescriptbox chooseplan commonPadding'>
           <div className="row">
 
               {/* === */}
               <div className="col-md-12">
-                  <div className='detail' data-aos="flip-left" data-aos-duration="2000">
+                  <div className='detail'>
                       <h3>Choose Plan That’s Right For You</h3>
                       <p>Choose plan that works best for you, feel free to contact us</p>
                   </div>
@@ -18,7 +20,7 @@ const Chooseplan = () => {
                   <div className='sliderBox'>
 
                     {/* ======= */}
-                    <div className='DetailBbox' data-aos="flip-left" data-aos-duration="4000">
+                    <div className='DetailBbox' >
                         <h3>Free</h3>
                         <p>Have a go and test your  superpowers</p>
                         <p className='price'><sup>$</sup>0</p>
@@ -34,7 +36,7 @@ const Chooseplan = () => {
                         </div>
                     </div>
 
-                    <div className='DetailBbox pro' data-aos="flip-left" data-aos-duration="3000">
+                    <div className='DetailBbox' >
                         <h3>Pro</h3>
                         <p>Have a go and test your  superpowers</p>
                         <p className='price'><sup>$</sup>8</p>
@@ -51,7 +53,7 @@ const Chooseplan = () => {
                         </div>
                     </div>
 
-                    <div className='DetailBbox' data-aos="flip-left" data-aos-duration="2000">
+                    <div className='DetailBbox' >
                         <h3>Business</h3>
                         <p>Have a go and test your  superpowers</p>
                         <p className='price'><sup>$</sup>16</p>

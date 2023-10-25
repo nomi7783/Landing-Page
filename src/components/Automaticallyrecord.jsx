@@ -7,9 +7,9 @@ const Automaticallyrecord = () => {
     <section className="automaticallyRecordSection">
       <div className="container-fluid">
         <Automaticallybox />
-        <Automaticallyboxflip />
+        <Automaticallyboxflip margin="marginLeft"/>
         <Automaticallybox />
-        <Automaticallyboxflip />
+        <Automaticallyboxflip  margin="marginLeft"/>
       </div>
     </section>
   );

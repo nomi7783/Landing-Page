@@ -1,53 +1,53 @@
 /* ================================================ */
 /* Common-css-start */
 
-h1 {
-  /* font-family: 'CabinetGrotesk-Extrabold'; */
-  font-family: 'Poppins', sans-serif;
-  font-size: 55px;
+h1{
+    font-family: "Cabinet Grotesk", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: linear-gradient(180deg, #007bff 0%, #000000 56.56%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 h2{
-  /* font-family: 'CabinetGrotesk-Extrabold'; */
   font-family: 'Poppins', sans-serif;
-  font-size: 40px;
+  font-size: 39px;
   line-height: 40px;
 }
-
 h3 {
-    /* font-family: 'CabinetGrotesk-Extrabold'; */
     font-family: 'Poppins', sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     max-width: 460px;
     font-weight: 600;
 	width: 100%;
+    line-height: 45px;
+    background: linear-gradient(180deg, #017cff 15.21%, #000000 87.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 h4 {
     font-size: 50px;
     max-width: 650px;
     width: 100%;
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Cabinet Grotesk", sans-serif;
     font-weight: 600;
 }
-
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: #475569;
 }
-
 a {
 	font-family: 'Open Sans', sans-serif;
 }
-
-
 .commonPadding {
-  padding: 0 140px;
+  padding: 0 135px;
 }
-
 /* Common-css-end */
 /* ================================================ */
 
@@ -63,13 +63,13 @@ a {
     background: linear-gradient(264.55deg, #000000 0%, #000102 51.04%, #017CFF 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
 	margin: 0 60px;
     border-radius: 100px;
-	padding: 0.5rem 2rem;
+	padding: 1rem 1rem 1rem 2rem;
+    margin-top: 33px;
 }
 .bannerSection .navbar .navbar-brand>img {
-    max-width: 200px;
+    max-width: 140px;
     width: 100%;
 }
-
 .bannerSection .navbar button {
     background: #007BFF;
     font-size: 13px;
@@ -82,42 +82,79 @@ a {
     margin: 0 11px;
     font-size: 15px;
     font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.bannerSection .navbar .nav-item.active>a {
+    font-weight: 600;
+}
+.bannerSection .navbar .regBtn {
+    padding: 13px 32px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 13px;
+    margin-left: 15px;
+}
+.bannerSection .navbar .loginBtn {
+    padding: 13px 13px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.bannerSection .navbar .nav-item{
+    position: relative;
+}
+.bannerSection .navbar .nav-item.active a:before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 6px;
+    background: #fff;
+    top: 138%;
+    position: absolute;
+    border-radius: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .bannerBox {
-    margin: 70px 0;
+    margin: 70px 0 194px;
 }
-
 .bannerBox .col-md-12 {
     margin-top: 70px;
 }
 .bannerBox .details p {
   text-align: right;
 }
-.heading>span{
+/* .heading>span{
 	color:#007BFF;
-}
+} */
 .bannerBox .row{
   align-items: center;
 }
-
 .btn-Box{
   text-align: right;
+  margin-top: 30px;
 }
 
 .bannerBox .img>img {
   max-width: 100%;
-}
-
-button {
+  box-shadow: 0px 46.639671325683594px 93.27934265136719px 0px #017CFF1A;
+}button {
     padding: 0;
     outline: 0;
     border: 0;
-	padding: 15px 35px;
+    padding: 17px 35px;
     border-radius: 32px;
-    font-size: 14px;
-	color: #fff;
-	box-shadow: 0px 0px 5px 5px #8888880f;
-	font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: 0px 0px 5px 5px #8888880f;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
 }
 
 button:focus {
@@ -132,11 +169,19 @@ button:focus {
 .white{
     background: #fff;
 	color: #000;
+    font-weight: bold;
 }
 
 .btn-Box>button {
     margin-left: 15px;
+    padding: 17px 35px;
+    font-size: 16px;
+    font-weight: 600;
 }
+.btn-Box>button.blue{
+    box-shadow: 0px 4px 12px 0px #017CFF66;
+}
+
 /* section-1-css-end */
 /* ================================================ */
 
@@ -165,38 +210,58 @@ button:focus {
 /* section-3-css-start */
 .automaticallyRecordSection {
     padding: 100px 0 0;
+    overflow-x: hidden;
 }
 .automaticallybox .row {
   align-items: center;
 }
 .automaticallybox {
     margin-bottom: 100px;
+    position: relative;
+    
 }
+
 .automaticallyRecordSection img{
   width: 100%;
 }
 .automaticallybox ol>li {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 5px;
 }
 
 .automaticallybox ol {
     margin: 35px 0;
 }
+
+.automaticallybox .details ol {
+
+    padding-left: 15px;
+}
+.automaticallybox .details {
+    max-width: 490px;
+    width: 100%;
+}
+
+.automaticallybox.commonPadding.marginLeft .details {
+    margin-left: auto;
+}
+
+
 h3>Span {
     color: #007BFF;
 }
-
-
 .salescriptbox h3 {
-    margin: 0 auto 50px;
+    margin: 0 auto 40px;
+    color: #000 !important;
+    background: none;
+    -webkit-text-fill-color: unset;
+    font-size: 33px;
+    max-width: 100%;
 }
-
 .save {
     font-size: 14px !important;
     background: #85DAB9;
     width: fit-content;
-    /* display: inline; */
     max-width: 100px !important;
     width: 100%;
     color: #fff;
@@ -215,27 +280,31 @@ h3>Span {
     max-width: 1030px;
     width: 100%;
     margin: 0 auto 50px;
-    line-height: 34px;
+    line-height: 36px;
     letter-spacing: 1px;
+    font-size: 21px;
 }
 
 .letdownloadBox p {
     max-width: 680px;
     width: 100%;
     margin: 40px auto;
+    color: #000;
 }
 
 .downloadBtn {
-    padding: 6px 10px;
-    font-size: 10px;
+    padding: 4px 15px;
+    font-size: 15px;
     background: #007BFF;
+    font-family: "Cabinet Grotesk", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
 }
-
 .letdownloadBox .btnBox>button {
     margin: 0 11px;
+    padding: 20px 35px;
 }
-
-
 /* section-3-css-end */
 /* ================================================ */
 
@@ -244,75 +313,49 @@ h3>Span {
 /* ================================================ */
 /* section-4-css-start */
 .salescriptsection{
-  padding: 100px 0;
+  padding:80px 0
 }
-
 .salescriptbox{
 	text-align: center;
 }
+.imgbox {
+    position: relative;
+    height: 95%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.imgbox:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+   background: #171B4180;
+   border-radius: 15px;
+  }
+
+  .imgbox>img{
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .imgbox>h5 {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+}
+
 .imageHoverbox {
     margin-bottom: 20px;
 }
-/* hover-effect-css-start */
-.card {
-	position: relative;
-	background: radial-gradient(#111 50%, #000 100%);
-	overflow: hidden;
-	cursor: pointer;
-  height: 350px;
-  border-radius: 20px;
-}
-
-.card img {
-	max-width: 100%;
-	display: block;
-}
-
-.card img {
-	transform: scale(1.3);
-	transition: 0.3s ease-out;
-}
-
-.card:hover img {
-	transform: scale(1.1) translateY(-20px);
-	opacity: 0.3;
-}
-
-.overlay {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	padding: 15px;
-	text-align: center;
-	color: #fff;
-}
-
-.text-h1 {
-	transform: translateY(30px);
-	opacity: 0;
-	transition: all .3s ease-out;
-  font-size: 35px;
-}
-
-.text-p {
-	transform: translateY(30px);
-	opacity: 0;
-	transition: all .3s ease-out 0.2s;
-  font-size: 20px;
-}
-
-.card:hover .overlay .text-h1 {
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.card:hover .overlay .text-p {
-	opacity: 1;
-	transform: translateY(0);
-}
-/* hover-effect-css-end */
 /* section-4-css-end */
 /* ================================================ */
 
@@ -323,65 +366,117 @@ h3>Span {
 /* ================================================ */
 /* section-5-css-start */
 .salescriptbox.chooseplan h3 {
+    font-family: "Cabinet Grotesk", sans-serif;
     max-width: 600px;
-	margin: 0 auto 20px;
+    margin: 0 auto 20px;
+    background: linear-gradient(180deg, #7d3bed 0%, #000 87.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
 }
-
 .salescriptbox.chooseplan .DetailBbox p {
     max-width: 250px;
     width: 100%;
     margin: 0 auto;
+    font-size: 18px;
+    color: #64748B;
 }
 
 .salescriptbox.chooseplan .DetailBbox p:last-of-type {
     font-size: 50px;
     margin: 20px auto 20px;
+    font-weight: 700;
+    font-family: "Cabinet Grotesk", sans-serif;
+}
+
+.salescriptbox.chooseplan .DetailBbox p:last-of-type>sup {
+    font-size: 20px;
+    position: relative;
+    top: -40px;
+    color: #A6A6A6;
+    font-weight: 300;
 }
 
 .sliderBox>.DetailBbox {
+    font-family: "Cabinet Grotesk", sans-serif;
     max-width: 420px;
-    box-shadow: 0px 0px 5px 5px #8888880f;
+    box-shadow: 0px 2px 4px 2px #8888880f;
     border-radius: 20px;
     padding: 50px 20px;
-    margin: 20px 20px;
+    margin: 17px 10px;
     width: 100%;
+    transition: 0.5s ease;
 }
+
+.sliderBox>.DetailBbox:hover{
+    background-image: url(./img/Ellipse.png);
+    background-color: #017CFFC2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y:110% ;
+    transition: 1s ease;
+   transform: scale(1.05);
+}
+
+.sliderBox>.DetailBbox>h3 {
+    color: #000 !important;
+    -webkit-text-fill-color: black;
+    font-weight: 600;
+    font-family: "Cabinet Grotesk", sans-serif;
+    font-size: 30px;
+}
+
+.sliderBox>.DetailBbox:hover>h3 {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+}
+
+.sliderBox>.DetailBbox:hover >p{
+    color: #fff !important;
+}
+.sliderBox>.DetailBbox:hover >p>sup{
+    color: #fff !important;
+}
+
 
 .DetailBbox.pro {
     background: #017CFFC2;
     padding: 90px 20px;
 }
-
-.DetailBbox.pro h3,.DetailBbox.pro p{
+.DetailBbox.pro h3{
+    color: #000;
+}
+.DetailBbox.pro p{
 	color:#fff;
 }
-
+.price {
+    color: #000 !important;
+}
 .sliderBox>.DetailBbox ul {
     list-style-type: none;
     text-align: left;
-   
     border-radius: 10px;
-    /* padding: 33px 33px; */
 	padding:0 10px ;
 }
 
 .sliderBox>.DetailBbox>div button {
-    color: #007BFF;
+    color: #017CFFC2;
     background: #fff;
-    padding: 15px 65px;
+    padding: 17px 65px;
     margin-top: 20px;
+    font-size: 20px;
 }
 
-.sliderBox>.DetailBbox>div{
-	background: #F9FAFB;
-	padding: 33px 33px;
-	border-radius: 11px;
+.sliderBox>.DetailBbox>div {
+    background: #F9FAFB;
+    padding: 33px 25px;
+    border-radius: 11px;
 }
 
 .sliderBox>.DetailBbox ul li {
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 15px;
-    color: #000;
+    color: #191A15;
 }
 
 .sliderBox>.DetailBbox ul li i {
@@ -389,15 +484,17 @@ h3>Span {
     font-size: 22px;
     margin-right: 10px;
 }
-
-
 .sliderBox>.DetailBbox ul li i {
     color: #fff;
-    font-size: 17px;
+    font-size: 11px;
     margin-right: 10px;
-    background: #007BFF;
     border-radius: 50%;
     padding: 5px;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    background: #017CFFC2;
+    padding-top: 10px;
 }
   /* section-5-css-end */
   /* ================================================ */
@@ -410,18 +507,16 @@ h3>Span {
 .letdownloadBox {
     text-align: center;
 }
-
 .letDownloadSection{
 	padding: 100px 0;
-	/* background-color: rgba(128, 128, 128, 0.208); */
 	background:linear-gradient(
         0deg,
-        rgba(237, 235, 227, 0.8),
-        rgba(237, 235, 227, 0.8)
-      ), url(./img/meeting.jpg) no-repeat;
+        rgba(237, 237, 235, 0.9),
+        rgba(239, 239, 237, 0.9)
+      ), url(./img/meeting.png);
 	background-size: cover;
+    background-position-y: 40%;
 }
-
   /* section-6-css-end */
   /* ================================================ */
   
@@ -451,11 +546,10 @@ h3>Span {
     max-width: 640px;
     width: 100%;
     margin-bottom: 50px;
+    font-size: 18px;
 }
 
 .customLinkTabs a {
-    display: block;
-    /* background: green; */
     color: #000;
     box-shadow: 0px 0px 5px 5px #8888880f;
     display: flex;
@@ -465,11 +559,20 @@ h3>Span {
     margin-bottom: 1px;
     border-radius: 10px;
     text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .customLinkTabs a:hover {
 	color: #fff;
 	background-color: #007BFF;
+    box-shadow: 0px 33px 66px 0px #3B82F640;
+}
+
+
+.customLinkTabs {
+    max-width: 660px;
+    width: 100%;
 }
   /* section-7-css-end */
   /* ================================================ */
@@ -494,22 +597,33 @@ h3>Span {
 }
 
 .footerBox p {
-    color: #fff;
+    color: #B2B3CF;
+    font-size: 21px;
+    font-family: "Cabinet Grotesk", sans-serif;
 }
 .footerBox .links {
     display: flex;
     justify-content: space-between;
-    margin: 100px auto 20px;
-    max-width: 330px;
+    margin: 70px auto 20px;
+    max-width: 450px;
+    align-items: center;
 }
 
-.footerBox .links a{
-    color: #B2B3CF
+.footerBox .links a {
+    color: #B2B3CF;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footerBox .links a.bar {
+    font-size: 13px;
 }
 
 .footerBox .copyright {
     color: #B2B3CF;
 	font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer .input-group-append {
@@ -531,6 +645,14 @@ h3>Span {
 .searchField {
     display: flex;
     justify-content: space-between;
+    max-width: 460px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.searchField .blue {
+    padding: 12px 30px;
+    font-size: 18px;
 }
   /* Footer-css-end */
   /* ================================================ */
@@ -682,6 +804,37 @@ h3>Span {
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .mainBackgroundContainer {
+    position: relative;
+}
+.mainBackgroundContainer .bg {
+    background: url(./img/firstbg.png);
+    width: 767px;
+    height: 767px;
+    top: -120px;
+    left: -242px;
+    border-radius: 767px;
+    opacity: 0.4;
+    background: var(--blue-600, #2563eb);
+    filter: blur(300px);
+    position: absolute;
+    z-index: -1;
+}
 
 
 

@@ -7,7 +7,7 @@ const Bannercomponent = () => {
     <section className='bannerSection'>
         <div className='container-fluid'>
         <Header/>
-        <Bannersection/>
+        {/* <Bannersection/> */}
         </div>
     </section>
   )

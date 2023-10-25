@@ -7,7 +7,7 @@ const Automaticallybox = () => {
     <div className="automaticallybox commonPadding">
        <div className="row">
             <div className="col-xl-6">
-                <div className='details' data-aos="fade-up-right" data-aos-duration="2000">
+                <div className='details' >
                     <h3>Automatically record and<span> transcribe meetings</span></h3>
                     <ol>
                         <li>Transcribe meetings across several video-conferencing apps, dialers, and audio files.</li>
@@ -15,12 +15,13 @@ const Automaticallybox = () => {
                         <li>Fireflies captures video + audio, and generates transcripts in minutes.</li>
                         <li>Integrates with apps like Google Meet, Zoom, Teams Webex, Ringcentral, Aircall and other platforms.</li>
                     </ol>
-                    <Button color={"blue"} text={"Get Started for FREE"}/>
+                    <Button color={"blue"} text={"Get Started for free"}/>
                 </div>
             </div>
             <div className="col-xl-6">
-            <div className="img" data-aos="fade-up-left" data-aos-duration="3000">
+            <div className="img" >
                 <img src={automaticallyImage} alt="" />
+                <div className='bg1'></div>
             </div>
             </div>
         </div>
